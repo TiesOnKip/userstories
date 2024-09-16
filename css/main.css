@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --primary-blue: #5DB7DE;
+    --primary-tan-light: #F1E9DB;
+    --primary-black: #07020D;
+    --primary-tan: #A39B8B;
+    --primary-tan-dark: #716A5C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: var(--primary-tan-light);
+    height: 100px;
+    align-items: center;
+}
+
+header h1 {
+    padding: 30px;
+    transition: all 0.25s;
+    height: 100%;
+    user-select: none;
+}
+
+header h1:hover {
+    animation: spin 1s linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+nav a:not(:last-child) {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-black);
+    border-top: 2px solid var(--primary-black);
+    border-bottom: 2px solid var(--primary-black);
+    padding: 5px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    margin: 20px;
+}
+
+nav a:hover {
+    letter-spacing: 5px;
+}
+
+nav *:not(:last-child) {
+    padding: 30px;
+}
+
+nav a:last-child {
+    display: block;
+    width: 100px;
+    height:60px;
+    padding-left: 15px;
+}
+
+nav a img {
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--primary-tan-light);
+    height: 90px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.2em;
+}

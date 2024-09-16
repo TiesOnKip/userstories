@@ -1,0 +1,75 @@
+@import url(main.css);
+
+
+main div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    background: var(--primary-blue);
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 18px -1px rgba(0,0,0,0.45);
+
+}
+
+main div p:nth-child(1) {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+}
+
+main div p:last-child {
+    font-size: 1.3em;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input:not([type="submit"]) {
+    width: 80%;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+}
+
+form input:not([type="submit"]):focus {
+    outline: none;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--primary-black);
+    background-color: var(--primary-tan-light);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 18px -1px rgba(0,0,0,0.45);
+    transition: all 0.1s;
+    border: none;
+    width: 120px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    color: var(--primary-white);
+    opacity: 0.9;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}

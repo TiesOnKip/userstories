@@ -1,0 +1,127 @@
+@import url(main.css);
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main h1 {
+    font-size: 1.8em;
+    background-color: var(--primary-tan);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 7px;
+    box-shadow: 7px 7px 18px -1px rgba(0, 0, 0, 0.45);
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 150px;
+    position: relative;
+    padding: 10px;
+}
+
+#logo {
+    width: 500px;
+    animation: float 7s infinite;
+    margin-top: 100px;
+    margin-left: -400px;
+    user-select: none;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(-70px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    70%{
+        transform: translateY(-25px);
+    }
+    80%{
+        transform: translateY(2px);
+    }
+    90%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#info {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+}
+
+#welcome, #start {
+    background-color: var(--primary-blue);
+    border-radius: 10px;
+    box-shadow: 7px 7px 18px -1px rgba(0,0,0,0.45);
+}
+
+#welcome {
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+#welcome h2 {
+    font-size: 2em;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#welcome p {
+    font-size: 1.4em;
+    margin: 10px;
+    text-align: center;
+    width: 70%;
+}
+
+#start {
+    margin-top: 190px;
+    margin-left: -80px;
+    z-index: 1;
+    position: relative;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#start p {
+    font-size: 1.3em;
+    margin: 10px;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+
+#start a {
+    text-decoration: none;
+    color: var(--primary-black);
+    background-color: var(--primary-tan-light);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 18px -1px rgba(0,0,0,0.45);
+    transition: all 0.1s;
+}
+
+#start a:hover {
+    color: var(--primary-white);
+    opacity: 0.9;
+}
+
+#start a:active {
+    transform: scale(0.95);
+}
